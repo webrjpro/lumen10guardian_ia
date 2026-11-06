@@ -1,0 +1,7 @@
+{
+  "version":"2.0.0",
+  "tasks":[
+    {"label":"Guardian: abrir painel","type":"process","command":"pwsh","args":["-NoProfile","-File","${workspaceFolder}/lumen10_guardian_ia/scripts/Abrir-Painel.ps1"],"problemMatcher":[]},
+    {"label":"Guardian: testes","type":"process","command":"${workspaceFolder}/lumen10_guardian_ia/.venv/Scripts/python.exe","args":["-m","pytest","${workspaceFolder}/lumen10_guardian_ia/tests","-q"],"problemMatcher":[]}
+  ]
+}

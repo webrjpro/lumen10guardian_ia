@@ -1,0 +1,20 @@
+{
+  "name":"guardian", "displayName":"Lumen10 Guardian", "publisher":"lumen10", "version":"0.1.0",
+  "description":"Painel local, incidentes, contexto Codex e terminal PowerShell do Lumen10 Guardian.",
+  "engines":{"vscode":"^1.95.0"}, "main":"./extension.js", "categories":["Other"],
+  "activationEvents":["onUri"],
+  "capabilities":{"untrustedWorkspaces":{"supported":false},"virtualWorkspaces":false},
+  "contributes":{
+    "commands":[
+      {"command":"guardian.open","title":"Guardian: Abrir painel"},
+      {"command":"guardian.terminal","title":"Guardian: Abrir PowerShell"},
+      {"command":"guardian.start","title":"Guardian: Iniciar serviço local"}
+    ],
+    "configuration":{"title":"Lumen10 Guardian","properties":{
+      "guardian.home":{"type":"string","default":"","description":"Caminho absoluto da pasta lumen10_guardian_ia."},
+      "guardian.port":{"type":"number","default":8765,"minimum":1024,"maximum":65535,"description":"Porta do plano de controle local."}
+      ,"guardian.data":{"type":"string","default":"","description":"Diretório de dados da instância, quando diferente do padrão do perfil."}
+    }}
+  },
+  "license":"UNLICENSED"
+}

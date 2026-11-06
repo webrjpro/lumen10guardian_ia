@@ -1,0 +1,22 @@
+[Unit]
+Description=Lumen10 Guardian telemetry collector
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=guardian
+Group=guardian
+WorkingDirectory=/opt/lumen10-guardian
+ExecStart=/opt/lumen10-guardian/.venv/bin/python collector.py --url http://127.0.0.1:8765 --environment REPLACE_ENVIRONMENT_UUID --token-file /etc/lumen10-guardian/agent.token --spool /var/lib/lumen10-guardian/spool.db
+Restart=on-failure
+RestartSec=15
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/lumen10-guardian
+UMask=0077
+
+[Install]
+WantedBy=multi-user.target

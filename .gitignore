@@ -1,0 +1,16 @@
+lumen10_guardian_ia/.venv/
+**/__pycache__/
+**/.pytest_cache/
+**/.ruff_cache/
+**/node_modules/
+**/*.egg-info/
+**/*.vsix
+**/runtime/
+**/.env
+**/.env.*
+!**/.env.example
+/credenciais.md
+/git.md
+/.ruff_cache/
+/output/
+/tmp/

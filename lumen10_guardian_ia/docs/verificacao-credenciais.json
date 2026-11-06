@@ -1,0 +1,10 @@
+{
+  "staged_files_checked": 83,
+  "known_secret_values_checked": 9,
+  "credential_file_ignored": true,
+  "github_credential_file_ignored": true,
+  "private_pdf_ignored": true,
+  "private_identity_not_staged": true,
+  "leaks_found": false,
+  "scope": "Comparacao local contra valores identificaveis dos arquivos privados fornecidos; nao substitui auditoria completa"
+}

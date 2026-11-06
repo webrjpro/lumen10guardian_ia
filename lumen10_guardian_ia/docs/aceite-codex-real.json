@@ -1,0 +1,17 @@
+{
+  "requested_model": "gpt-6.1-sol",
+  "reasoning": "high",
+  "executed_at": "2026-11-06T15:12:17.255305+00:00",
+  "provider": "Codex CLI / ChatGPT login / duas sessões reais",
+  "synthetic_application": true,
+  "production_touched": false,
+  "specialist": "qa",
+  "tests_passed": true,
+  "tests_output": "test_normal (test_regression.GreetingTests.test_normal) ... ok\ntest_null (test_regression.GreetingTests.test_null) ... ok\ntest_trim (test_regression.GreetingTests.test_trim) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.000s\n\nOK\n",
+  "commit": "53340deaba12f815616a6e8fe0604153c4f45e75",
+  "artifact_sha256": "995eee7cdba8058182011c92429fdfc0e7679f2c081b5e107743b178762fb73f",
+  "deployment_state": "RESOLVIDO",
+  "rollback_state": "REVERTIDO",
+  "audit_valid": true,
+  "evidence_directory": "C:\\Users\\pique\\AppData\\Local\\Lumen10Guardian\\acceptance-77lyxn96"
+}

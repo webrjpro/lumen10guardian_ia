@@ -1,0 +1,11 @@
+{
+  "executed_at_epoch": 1793979224.0224414,
+  "browser": "Chrome headless",
+  "javascript_errors": [],
+  "mobile_horizontal_overflow": false,
+  "real_telemetry": true,
+  "navigation_sections": 9,
+  "system_tabs_tested": true,
+  "activation_tested": true,
+  "powershell_diagnostic_tested": true
+}
